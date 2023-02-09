@@ -15,13 +15,13 @@ const Home = () => {
   const dispatch = useDispatch();
 
   // useEffect(() => {
-  //   fetch("http://localhost:5000/products")
+  //   fetch("https://moon-tech-starter-pack-again-server.vercel.app/products")
   //     .then((res) => res.json())
   //     .then((data) => setProducts(data.data));
   // }, []);
 
   // useEffect(()=>{
-  //   fetch("http://localhost:5000/products")
+  //   fetch("https://moon-tech-starter-pack-again-server.vercel.app/products")
   //   .then((res)=>res.json())
   //   .then((data)=>dispatch(loadProduct(data)))
   // }, []);

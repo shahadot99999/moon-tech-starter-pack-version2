@@ -3,7 +3,7 @@ import { removeProduct } from "../../actions/productAction";
 
 const deleteProduct =(id)=>{
     return async (dispatch, getState)=>{
-        const res = await fetch(`http://localhost:5000/products/${id}`, {
+        const res = await fetch(`https://moon-tech-starter-pack-again-server.vercel.app/products/${id}`, {
          method:"DELETE",
         headers:{
             "Content-type" : "application/json",
