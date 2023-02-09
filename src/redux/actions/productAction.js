@@ -1,17 +1,34 @@
+//import { data } from "autoprefixer";
 import {
   ADD_PRODUCT,
   ADD_TO_CART,
+  LOAD_PRODUCT,
   PRODUCT_LOADED,
   REMOVE_FROM_CART,
   REMOVE_PRODUCT,
 } from "../actionTypes/actionTypes";
 
-export const addProduct = (product) => {
-  return {
+export const loadProduct = (data)=>{
+  return{
+    type: LOAD_PRODUCT,
+    payload:data
+  }
+}
+
+export const addProduct = (data)=>{
+  return{
     type: ADD_PRODUCT,
-    payload: product,
-  };
-};
+    payload:data
+  }
+}
+
+
+// export const addProduct = (product) => {
+//   return {
+//     type: ADD_PRODUCT,
+//     payload: product,
+//   };
+// };
 
 export const removeProduct = (id) => {
   return {
